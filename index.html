@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>JCS Consultoria e Análise de Dados</title>
+  <meta name="description" content="JCS Consultoria — modelagem de dados, análises estatísticas e Business Intelligence."/>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header id="site-header" class="header" role="banner">
+    <div class="container header-inner">
+      <div class="brand" aria-hidden="false">
+        <img src="img/logojcs.png" alt="Logo JCS Consultoria e Análise de Dados" class="logo-mark">
+        <div class="brand-text">
+          <h1>JCS</h1>
+          <small>Consultoria &amp; Análise de Dados</small>
+        </div>
+      </div>
+
+      <nav id="main-nav" class="nav" role="navigation" aria-label="Menu principal">
+        <ul>
+          <li><a href="#home" data-link>Início</a></li>
+          <li><a href="#sobre" data-link>Sobre</a></li>
+          <li><a href="#servicos" data-link>Serviços</a></li>
+          <li><a href="#cases" data-link>Projetos</a></li>
+          <li><a href="#contato" data-link>Contato</a></li>
+          <li><a href="#" id="open-game" aria-haspopup="dialog">Desafio</a></li>
+        </ul>
+      </nav>
+
+      <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero" aria-label="Início">
+      <!-- hero background video (looping) -->
+      <video id="hero-video" class="hero-video" autoplay muted playsinline loop aria-hidden="true">
+        <source src="img/1.mp4" type="video/mp4">
+        <!-- fallback: nada -->
+      </video>
+
+      <!-- particles canvas sits above video and under content -->
+      <canvas id="particles-canvas" aria-hidden="true"></canvas>
+
+      <div class="hero-inner container">
+        <div class="hero-content">
+          <h2 class="hero-title">Transformamos dados em resultados de pesquisas e decisões estratégicas</h2>
+          <p class="hero-lead">Análise de dados e consultoria para organização e decisões acadêmicas e empresariais.</p>
+          <div class="hero-actions">
+            <a href="#contato" class="btn primary">Solicitar Orçamento</a>
+            <a href="#servicos" class="btn ghost">Ver Serviços</a>
+          </div>
+        </div>
+        <div class="hero-panel reveal delay-3" aria-hidden="true">
+          <img src="img/logojcs.png" alt="Foto logo JCS" height="174">
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE (somente sobre) -->
+    <section id="sobre" class="section about" aria-label="Sobre a JCS">
+      <div class="container">
+        <div class="split">
+          <div class="left">
+            <h2>Sobre</h2>
+            <p>Somos uma consultoria com expertise em estatística aplicada, ciência de dados e engenharia de informações. Atuamos com metodologias reprodutíveis, enfatizando privacidade, transparência e impacto mensurável.</p>
+            <ul class="features">
+              <li>Rigor metodológico e reprodutibilidade</li>
+              <li>Visualizações e dashboards acionáveis</li>
+              <li>Integração com processos decisórios</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CANDIDATOS (seção separada) -->
+<section id="candidatos" class="section candidates" aria-label="Equipe / Candidatos">
+  
+  <!-- 🔥 BACKGROUND DE VÍDEO APENAS NESTA SEÇÃO -->
+  <video class="bg-video" autoplay loop muted playsinline>
+    <source src="img/2.mp4" type="video/mp4">
+  </video>
+
+  <div class="container equipe-content">
+    <h2>Equipe</h2>
+
+    <div class="candidatos">
+      <div class="card">
+        <a href="http://lattes.cnpq.br/2395133912263009">
+          <img src="img/joao.png" alt="Foto do Pesquisador João Vitor">
+        </a>
+        <h2>João Vitor</h2>
+        <p>Analista de Dados<br>Cientista Social</p>
+      </div>
+
+      <div class="card">
+        <a href="http://lattes.cnpq.br/2395133912263009">
+          <img src="img/carla.png" alt="Foto da Pesquisadora Carla Djaine">
+        </a>
+        <h2>Carla Djaine</h2>
+        <p>Analista de Dados<br>Doutoranda, Mestre e Cientista Social.</p>
+      </div>
+
+      <div class="card">
+        <a href="http://lattes.cnpq.br/2395133912263009">
+          <img src="img/syang.png" alt="Foto do Pesquisadora Syang Aires">
+        </a>
+        <h2>Syang Aires</h2>
+        <p>Analista de Dados<br>Cientista Social e Programadora WEB.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- GALERIA (seção separada) -->
+    <section id="galeria" class="section gallery" aria-label="Galeria">
+      <div class="container">
+        <h2>Galeria</h2>
+        <div class="gallery-container">
+          <a href="#chick-hicks" class="gallery-items">
+            <img src="img/fake_news_gtrends.gif" alt="Chick Hicks">
+          </a>
+          <a href="#" class="gallery-items">
+            <img src="img/doctor hudson.jpg" alt="Doctor Hudson">
+          </a>
+          <a href="#" class="gallery-items">
+            <img src="img/Fillmore.jpg" alt="Fillmore">
+          </a>
+          <a href="#" class="gallery-items">
+            <img src="img/flo.jpg" alt="Flo">
+          </a>
+          <a href="#" class="gallery-items">
+            <img src="img/Guido.png" alt="Guido">
+          </a>
+          <a href="#" class="gallery-items">
+            <img src="img/lightning-mcqueen.jpg" alt="lightning-mcqueen">
+          </a>
+          <a href="#" class="gallery-items">
+            <img src="img/Lizzie.jpg" alt="Lizzie">
+          </a>
+          <a href="#" class="gallery-items">
+            <img src="img/Luigi.png" alt="Luigi">
+          </a>
+          <a href="#" class="gallery-items">
+            <img src="img/Mack.jpg" alt="Mack">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section id="servicos" class="section services" aria-label="Serviços">
+      <video autoplay muted loop playsinline class="bg-video">
+        <source src="img/1.mp4" type="video/mp4">
+        Seu navegador não suporta a tag de vídeo.
+      </video>
+
+      <div class="container">
+        <h2>Serviços</h2>
+        <div class="cards">
+          <article class="service-card reveal-on-scroll">
+            <h3>Modelagem & Arquitetura</h3>
+            <p>Estruturação de dados, pipelines e governança para análises confiáveis.</p>
+          </article>
+
+          <article class="service-card reveal-on-scroll">
+            <h3>Análises Estatísticas Avançadas</h3>
+            <p>Inferência, testes, séries temporais e modelos customizados.</p>
+          </article>
+
+          <article class="service-card reveal-on-scroll">
+            <h3>Business Intelligence</h3>
+            <p>Dashboards interativos, monitoramento contínuo e KPIs estratégicos.</p>
+          </article>
+
+          <article class="service-card reveal-on-scroll">
+            <h3>Pesquisa Aplicada</h3>
+            <p>Desenho amostral, análises complexas e relatórios técnicos reproduzíveis.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal Game -->
+    <div id="jcs-game-modal" class="jcs-game-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="jcs-game-title">
+      <div class="jcs-game-backdrop" data-close></div>
+
+      <div class="jcs-game-shell" role="document">
+        <header class="jcs-game-header">
+          <div>
+            <strong id="jcs-game-title">Desafio da Análise de Dados</strong>
+            <small>Vivencie três etapas do fluxo analítico — descubra como a JCS pode ajudar.</small>
+          </div>
+          <button id="jcs-close" class="jcs-btn-close" aria-label="Fechar desafio">✕</button>
+        </header>
+
+        <main class="jcs-game-main">
+          <section class="jcs-stage" data-stage="intro">
+            <h4>Bem-vindo ao Desafio</h4>
+            <p>Você enfrentará 3 etapas: <em>Dados bagunçados</em>, <em>Escolha do modelo</em> e <em>Visualização</em>. Sons sutis indicam progresso. Boa sorte!</p>
+            <div class="jcs-game-controls">
+              <button id="jcs-start" class="btn primary">Iniciar Desafio</button>
+              <button id="jcs-exit" class="btn ghost">Fechar</button>
+            </div>
+          </section>
+
+          <section class="jcs-stage" data-stage="phase1" hidden>
+            <h4>Fase 1 — Dados bagunçados</h4>
+            <p>Clique nos valores <strong>incorretos</strong> na tabela antes de terminar (controle de 12s).</p>
+            <div id="jcs-grid" class="jcs-grid" aria-live="polite"></div>
+            <div class="jcs-small-note">Tempo restante: <span id="jcs-timer">12</span>s</div>
+            <div class="jcs-game-controls">
+              <button id="jcs-phase1-skip" class="btn ghost">Pular</button>
+            </div>
+          </section>
+
+          <section class="jcs-stage" data-stage="phase2" hidden>
+            <h4>Fase 2 — Escolha do modelo</h4>
+            <p>Qual abordagem é mais adequada para categorizar clientes por comportamento?</p>
+            <div class="jcs-choices" id="jcs-models">
+              <button data-choice="regression" class="jcs-choice">Regressão</button>
+              <button data-choice="clustering" class="jcs-choice">Clusterização</button>
+              <button data-choice="classification" class="jcs-choice">Classificação</button>
+            </div>
+            <div class="jcs-game-controls">
+              <button id="jcs-phase2-skip" class="btn ghost">Pular</button>
+            </div>
+          </section>
+
+          <section class="jcs-stage" data-stage="phase3" hidden>
+            <h4>Fase 3 — Visualização correta</h4>
+            <p>Qual gráfico você usaria para mostrar uma tendência temporal de vendas?</p>
+            <div class="jcs-choices" id="jcs-charts">
+              <button data-choice="pie" class="jcs-choice">Pizza</button>
+              <button data-choice="bar" class="jcs-choice">Barras</button>
+              <button data-choice="line" class="jcs-choice">Linha</button>
+            </div>
+          </section>
+
+          <section class="jcs-stage" data-stage="final" hidden>
+            <div class="jcs-final-card">
+              <h3>Parabéns — Desafio concluído</h3>
+              <p>Você enfrentou os desafios essenciais da análise de dados. Com a <strong>JCS Consultoria e Análise de Dados</strong>, essas etapas tornam-se processos automatizados, confiáveis e com impacto real nas decisões.</p>
+              <div class="jcs-game-controls">
+                <button id="jcs-contact-btn" class="btn primary">Falar com a JCS</button>
+                <button id="jcs-play-again" class="btn ghost">Jogar novamente</button>
+              </div>
+            </div>
+          </section>
+        </main>
+
+        <footer class="jcs-game-footer">
+          <small>Desafio criado para demonstrar desafios reais de análise. Sons e interações são opcionais e leves.</small>
+        </footer>
+      </div>
+    </div>
+
+    <!-- CASES -->
+    <section id="cases" class="section cases" aria-label="Cases">
+      <div class="container">
+        <h2> Projetos</h2>
+        <div class="case-grid">
+          <figure class="case-card reveal-on-scroll">
+            <div class="case-thumb">Projeto A</div>
+            <figcaption>
+              <h4>Análise de Sentimento</h4>
+              <h5> aaaaaaaaaaa</h5>
+            </figcaption>
+          </figure>
+
+          <figure class="case-card reveal-on-scroll">
+            <div class="case-thumb">Projeto B</div>
+            <figcaption>
+              <h4>Estudo epidemiológico</h4>
+              <h5>Análises que apoiaram decisões em saúde pública.</h5>
+            </figcaption>
+          </figure>
+
+          <figure class="case-card reveal-on-scroll">
+            <div class="case-thumb">Projeto C</div>
+            <figcaption>
+              <h4>Modelos preditivos</h4>
+              <h5>Modelagem para otimização de rotinas operacionais</h5>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+        <!-- CONTATO -->
+    <section id="contato" class="section contact" aria-label="Contato">
+      <div class="container">
+        <h2>Contato</h2>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal-on-scroll">
+            <p>Para propostas e contratações, envie uma mensagem. Respondemos preferencialmente em até 48 horas úteis.</p>
+            <ul class="info-list">
+              <li><strong>E-mail</strong><span> jcsconsultoriaeanalise@outlook.com</span></li>
+              <li><strong>Telefone</strong><span>+55 (84) 9 9604-8504</span></li>
+            </ul>
+          </div>
+
+          <form class="contact-form reveal-on-scroll" id="contactForm" action="https://formsubmit.co/seuemail@exemplo.com" method="POST" novalidate>
+            <input type="hidden" name="_subject" value="Contato JCS - Website">
+            <input type="hidden" name="_captcha" value="false">
+
+            <label><span>Nome</span><input type="text" name="nome" required></label>
+            <label><span>E-mail</span><input type="email" name="email" required></label>
+            <label><span>Empresa / Instituição</span><input type="text" name="empresa" placeholder="opcional"></label>
+            <label><span>Mensagem</span><textarea name="mensagem" rows="5" required></textarea></label>
+
+            <div class="form-actions">
+              <button type="submit" class="btn primary">Enviar Mensagem</button>
+              <button type="reset" class="btn ghost">Limpar</button>
+            </div>
+
+            <p class="form-note" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+
+      
+    </section>
+
+
+  <footer class="footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> JCS Consultoria e Análise de Dados — Todos os direitos reservados.</p>
+      <small>Política de privacidade • Termos</small>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+
+
+</body>
+</html>
